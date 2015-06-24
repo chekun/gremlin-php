@@ -23,7 +23,7 @@
         "yiisoft/yii2-apidoc": "2.0.0-beta"
     },
     "autoload": {
-        "psr4": {
+        "psr-4": {
             "BrightZone\\Rexpro": "src/"
         }
     }
