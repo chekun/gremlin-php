@@ -1,12 +1,10 @@
 <?php
-namespace brightzone\rexpro\tests;
+namespace BrightZone\Rexpro\tests;
 
-require_once('vendor/autoload.php');
-
-use \brightzone\rexpro\Connection;
-use \brightzone\rexpro\Messages;
-use \brightzone\rexpro\Exceptions;
-use \brightzone\rexpro\Helper;
+use BrightZone\Rexpro\Connection;
+use BrightZone\Rexpro\Messages;
+use BrightZone\Rexpro\Exceptions;
+use BrightZone\Rexpro\Helper;
 
 
 /**

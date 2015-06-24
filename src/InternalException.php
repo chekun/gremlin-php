@@ -1,8 +1,8 @@
 <?php
 
-namespace brightzone\rexpro;
+namespace BrightZone\Rexpro;
 
-use \Exception;
+use Exception;
 
 /**
  * Gremlin-server PHP Driver client Exception class for internal exceptions

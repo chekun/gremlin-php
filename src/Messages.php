@@ -1,6 +1,6 @@
 <?php
 
-namespace brightzone\rexpro;
+namespace BrightZone\Rexpro;
 
 /**
  * Gremlin-server PHP Driver client Messages class
@@ -247,7 +247,7 @@ class Messages
 			$value = new $value();
 		}
 
-		if(in_array('brightzone\rexpro\serializers\SerializerInterface', class_implements($value)))
+		if(in_array('BrightZone\Rexpro\Serializers\SerializerInterface', class_implements($value)))
 		{
 			if($default)
 			{

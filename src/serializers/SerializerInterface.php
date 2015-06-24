@@ -1,11 +1,11 @@
 <?php
 
-namespace brightzone\rexpro\serializers;
+namespace BrightZone\Rexpro\Serializers;
 
 /**
  * RexPro PHP Interface for Serializer classes
  * Builds and parses message body for Messages class
- * 
+ *
  * @category DB
  * @package  Rexpro
  * @author   Dylan Millikin <dylan.millikin@brightzone.fr>
@@ -16,25 +16,25 @@ interface SerializerInterface
 {
 	/**
 	 * Serializes the data
-	 * 
+	 *
 	 * @param array &$data data to be serialized
-	 * 
+	 *
 	 * @return int length of generated string
 	 */
 	public function serialize(&$data);
 
 	/**
 	 * Unserializes the data
-	 * 
+	 *
 	 * @param array $data data to be unserialized
-	 * 
+	 *
 	 * @return array unserialized message
 	 */
 	public function unserialize($data);
 
 	/**
 	 * Get this serializer's Name
-	 * 
+	 *
 	 * @return string name of serializer
 	 */
 	public function getName();
@@ -42,7 +42,7 @@ interface SerializerInterface
 	/**
 	 * Get this serializer's value
 	 * This will be deprecated with TP3 Gremlin-server
-	 * 
+	 *
 	 * @return string name of serializer
 	 */
 	public function getMimeType();

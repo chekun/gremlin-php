@@ -1,10 +1,8 @@
 <?php
 
-namespace brightzone\rexpro;
+namespace BrightZone\Rexpro;
 
-require_once('vendor/autoload.php');
-
-use brightzone\rexpro\serializers\Json;
+use BrightZone\Rexpro\Serializers\Json;
 
 /**
  * Gremlin-server PHP Driver client Connection class

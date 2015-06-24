@@ -1,14 +1,14 @@
 <?php
 
-namespace brightzone\rexpro\serializers;
+namespace BrightZone\Rexpro\Serializers;
 
-use \brightzone\rexpro\Messages;
-use \brightzone\rexpro\Helper;
+use BrightZone\Rexpro\Messages;
+use BrightZone\Rexpro\Helper;
 
 /**
  * RexPro PHP MSGPACK Serializer class
  * Builds and parses message body for Messages class
- * 
+ *
  * @category DB
  * @package  Rexpro
  * @author   Dylan Millikin <dylan.millikin@brightzone.fr>
@@ -21,17 +21,17 @@ class Msgpack implements SerializerInterface
 	 * @var string the name of the serializer
 	 */
 	public static $name = 'MSGPACK';
-	
+
 	/**
 	 * @var int Value of this serializer. Will be deprecated in TP3
 	 */
 	public static $mimeType = 'application/msgpack';
-	
+
 	/**
 	 * Serializes the data
-	 * 
+	 *
 	 * @param array &$data data to be serialized
-	 * 
+	 *
 	 * @return int length of generated string
 	 */
 	public function serialize(&$data)
@@ -45,24 +45,24 @@ class Msgpack implements SerializerInterface
 
 	/**
 	 * Unserializes the data
-	 * 
+	 *
 	 * @param array $data data to be unserialized
-	 * 
+	 *
 	 * @return array unserialized message
 	 */
 	public function unserialize($data)
 	{
 		$mssg = msgpack_unpack($data);
-		//lets just make UUIDs readable incase we need to debug 
+		//lets just make UUIDs readable incase we need to debug
 		$mssg[0] = Helper::binToUuid($mssg[0]);
 		$mssg[1] = Helper::binToUuid($mssg[1]);
 
 		return $mssg;
 	}
-	
+
 	/**
 	 * Get this serializer's Name
-	 * 
+	 *
 	 * @return string name of serializer
 	 */
 	public function getName()
@@ -73,7 +73,7 @@ class Msgpack implements SerializerInterface
 	/**
 	 * Get this serializer's value
 	 * This will be deprecated with TP3 Gremlin-server
-	 * 
+	 *
 	 * @return string name of serializer
 	 */
 	public function getMimeType()

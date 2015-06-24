@@ -1,5 +1,5 @@
 <?php
-namespace brightzone\rexpro\tests;
+namespace BrightZone\Rexpro\Tests;
 
 /**
  * Unit testing test case
