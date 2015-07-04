@@ -1,5 +1,5 @@
 {
-    "name": "brightzone/gremlin-php",
+    "name": "chekun/gremlin-php",
     "description": "gremlin-server client for php",
     "minimum-stability": "stable",
     "authors": [
